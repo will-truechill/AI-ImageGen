@@ -9,7 +9,6 @@ This program requires the following dependencies:
     Python 3.6 or later
     OpenAI API key
     requests library
-    OpenAI library
 
 Installation
 
