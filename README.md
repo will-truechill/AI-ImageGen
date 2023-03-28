@@ -15,14 +15,14 @@ Installation
 
 To use this program, follow these steps:
 
-    Clone the repository to your local machine.
+    Clone the repository to your local machine or download ai-imagegen.py as this file contains the python function.
     Set the OPENAI_API_KEY environment variable to your OpenAI API key.
     Install the requests library using pip: pip install requests
     Install the OpenAI library using pip: pip install openai
 
 Usage
 
-To use this program, simply run the image_gen() function with a user-provided prompt as the argument. The function will generate an image based on the prompt and save it as a PNG file in the same directory as the python file with a filename based on the first five characters of the prompt and the current time.
+To use this program, call the image_gen(string, opt[size]) function and pass it a string to use as a prompt for image generation. Size can also be passed as an optional argument to the function, but if the size isn't 256x256, 512x512, or 1024x1024, the OpenAI API will throw an erorr. 
 
 Please refer to the OpenAI API Documentation for information on modifying the request settings.
 https://platform.openai.com/docs/introduction
