@@ -10,12 +10,12 @@ user_input = input("Enter your image prompt: ")
 
 
 # This is the image generator function V1.
-def image_gen(request):
+def image_gen(request, size='512x512'):
     # Send the user input to the OpenAI image API
     response = openai.Image.create(
         prompt=f"{request}",
         n=1,
-        size="512x512"
+        size=f"{size}"
     )
     # Store the output of the API call to this variable
     image_url = response['data'][0]['url']
